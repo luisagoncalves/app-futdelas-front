@@ -38,8 +38,9 @@ Acesse [http://localhost:3000](http://localhost:3000).
 ## Rodando com Docker
 
 ```bash
-docker build -t app-futdelas-front .
-docker run -p 3000:3000 -v $(pwd):/app -v /app/node_modules app-futdelas-front
+docker compose up --build
+# Ou
+docker compose up
 ```
 
 ## Testes
